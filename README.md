@@ -1,4 +1,4 @@
-# R-alisez-une-application-de-recommandation-de-contenu
+# Realisez-une-application-de-recommandation-de-contenu
 
 Système de recommandation hybride – Filtrage de contenu - collaboratif & Modèles implicites
 
