@@ -41,12 +41,14 @@ if submitted:
             "contenu": contenu
         }])
 
-        
         file_path = os.path.join("data", "articles.csv")
+
+        # ✅ CRUCIAL : créer le dossier s'il n'existe pas
+        os.makedirs("data", exist_ok=True)
 
         if os.path.exists(file_path):
             df = pd.read_csv(file_path)
-
+            
             # 🚫 éviter doublons
             if article_id in df["article_id"].astype(str).values:
                 st.error("Article déjà existant")
