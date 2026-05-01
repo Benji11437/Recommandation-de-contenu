@@ -42,7 +42,9 @@ if submitted:
         }])
 
         file_path = os.path.join("data", "users_50.csv")
-
+       
+        os.makedirs("data", exist_ok=True)
+        
         if os.path.exists(file_path):
             df = pd.read_csv(file_path)
             df = pd.concat([df, new_user], ignore_index=True)
