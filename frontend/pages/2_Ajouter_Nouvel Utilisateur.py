@@ -41,7 +41,7 @@ if submitted:
             "prenom": prenom
         }])
 
-        file_path = "users_50.csv"
+        file_path = "data/users_50.csv"
 
         if os.path.exists(file_path):
             df = pd.read_csv(file_path)
